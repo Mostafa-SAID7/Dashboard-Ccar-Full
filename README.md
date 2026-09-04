@@ -1,61 +1,43 @@
-# Ccar
+# Dashboard CCAR
 
-A comprehensive car management system with multiple platform support.
+A full-stack car management dashboard application.
 
 ## Project Structure
 
-- **src/** - .NET backend application (Clean Architecture)
-  - Application Layer
-  - Domain Layer
-  - Infrastructure Layer
-  - Persistence Layer
-  - WebAPI
+```
+.
+├── .github/              # GitHub workflows and templates
+├── ClientApp/            # Angular frontend application
+├── src/                  # C# backend API and business logic
+└── docs/                 # Project documentation
+```
 
-- **ML/** - Machine Learning components
-  - Python-based ML models and services
+## Quick Start
 
-- **mobile/** - Flutter mobile application
-  - Cross-platform mobile app
-
-- **ClientApp/** - Web client application
-
-## Getting Started
-
-### Prerequisites
-
-- .NET SDK 8.0 or later
-- Python 3.8+
-- Flutter SDK
-- Node.js (for ClientApp)
-
-### Backend Setup
-
+### Backend (C#/.NET)
 ```bash
 cd src
-dotnet restore
 dotnet build
+dotnet run --project WebAPI
 ```
 
-### ML Setup
-
+### Frontend (Angular)
 ```bash
-cd ML
-pip install -r requirements.txt
-python main.py
+cd ClientApp
+npm install
+npm start
 ```
 
-### Mobile Setup
+## Technology Stack
 
-```bash
-cd mobile
-flutter pub get
-flutter run
-```
+- **Backend**: C# .NET (Clean Architecture)
+- **Frontend**: Angular + Tailwind CSS
+- **Database**: SQL Server
+
+## Documentation
+
+See `docs/` folder for detailed documentation.
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-See LICENSE file for details.
+Please read CONTRIBUTING.md for guidelines.
