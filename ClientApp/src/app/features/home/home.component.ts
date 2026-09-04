@@ -41,17 +41,17 @@ import { NotificationService } from '../../core/services/notification.service';
             Why Join Ccar?
           </h2>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <app-card title="Community" subtitle="Connect with enthusiasts" [hoverable]="true" class="animate-fade-in">
+            <app-card title="Community" subtitle="Connect with enthusiasts" [hover]="true" class="animate-fade-in">
               <p class="text-[var(--color-text-secondary)]">
                 Join a vibrant community of car lovers, share experiences, and make lasting connections.
               </p>
             </app-card>
-            <app-card title="Marketplace" subtitle="Buy & sell vehicles" [hoverable]="true" class="animate-fade-in">
+            <app-card title="Marketplace" subtitle="Buy & sell vehicles" [hover]="true" class="animate-fade-in">
               <p class="text-[var(--color-text-secondary)]">
                 Discover amazing deals, list your vehicles, and connect with serious buyers.
               </p>
             </app-card>
-            <app-card title="Resources" subtitle="Learn & grow" [hoverable]="true" class="animate-fade-in">
+            <app-card title="Resources" subtitle="Learn & grow" [hover]="true" class="animate-fade-in">
               <p class="text-[var(--color-text-secondary)]">
                 Access expert guides, maintenance tips, and the latest automotive news.
               </p>

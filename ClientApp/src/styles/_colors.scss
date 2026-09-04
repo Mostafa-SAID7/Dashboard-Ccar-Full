@@ -1,0 +1,158 @@
+// =============================================================================
+// COLOR PALETTE & LUXURY AUTOMOTIVE THEME TOKENS
+// =============================================================================
+
+:root {
+  // Light Theme Neutrals (Crisp Porcelain & Slate)
+  --color-bg: #f8fafc;
+  --color-surface: #ffffff;
+  --color-surface-elevated: #f1f5f9;
+  --color-surface-sunken: #e2e8f0;
+  --color-text: #0f172a;
+  --color-text-secondary: #475569;
+  --color-text-muted: #94a3b8;
+  --color-border: #e2e8f0;
+  --color-border-subtle: #f1f5f9;
+
+  // Primary: Electric Sapphire (Performance Blue)
+  --primary-50: #eff6ff;
+  --primary-100: #dbeafe;
+  --primary-200: #bfdbfe;
+  --primary-300: #93c5fd;
+  --primary-400: #60a5fa;
+  --primary-500: #2563eb;
+  --primary-600: #1d4ed8;
+  --primary-700: #1e40af;
+  --primary-800: #1e3a8a;
+  --primary-900: #172554;
+
+  --color-primary: #2563eb;
+  --color-primary-hover: #1d4ed8;
+  --color-primary-light: #60a5fa;
+
+  // Secondary: Cyber Indigo
+  --secondary-50: #f5f3ff;
+  --secondary-100: #ede9fe;
+  --secondary-200: #ddd6fe;
+  --secondary-300: #c4b5fd;
+  --secondary-400: #a78bfa;
+  --secondary-500: #6366f1;
+  --secondary-600: #4f46e5;
+  --secondary-700: #4338ca;
+  --secondary-800: #3730a3;
+  --secondary-900: #312e81;
+
+  --color-secondary: #6366f1;
+  --color-secondary-hover: #4f46e5;
+  --color-secondary-light: #a78bfa;
+
+  // Accent: Turbo Amber / Flame
+  --accent-50: #fff7ed;
+  --accent-100: #ffedd5;
+  --accent-200: #fed7aa;
+  --accent-300: #fdba74;
+  --accent-400: #fb923c;
+  --accent-500: #f97316;
+  --accent-600: #ea580c;
+  --accent-700: #c2410c;
+  --accent-800: #9a3412;
+  --accent-900: #7c2d12;
+
+  --color-accent: #f97316;
+  --color-accent-hover: #ea580c;
+  --color-accent-light: #fb923c;
+
+  // Semantic Status Colors
+  --color-success: #10b981;
+  --color-success-light: #34d399;
+  --color-warning: #f59e0b;
+  --color-warning-light: #fbbf24;
+  --color-error: #ef4444;
+  --color-error-light: #f87171;
+  --color-info: #0ea5e9;
+  --color-info-light: #38bdf8;
+
+  // High-Performance Gradients
+  --gradient-primary: linear-gradient(135deg, #2563eb 0%, #4f46e5 100%);
+  --gradient-secondary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  --gradient-accent: linear-gradient(135deg, #f97316 0%, #fbbf24 100%);
+  --gradient-turbo: linear-gradient(135deg, #2563eb 0%, #06b6d4 100%);
+  --gradient-sunset: linear-gradient(135deg, #f43f5e 0%, #fb923c 100%);
+  --gradient-success: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  --gradient-dark: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  --gradient-surface: linear-gradient(180deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.5) 100%);
+}
+
+// Dark Theme (Deep Obsidian Cockpit Aesthetic)
+.dark {
+  --color-bg: #0b0f17;
+  --color-surface: #111827;
+  --color-surface-elevated: #1e293b;
+  --color-surface-sunken: #070a10;
+  --color-text: #f8fafc;
+  --color-text-secondary: #94a3b8;
+  --color-text-muted: #64748b;
+  --color-border: #1e293b;
+  --color-border-subtle: #162032;
+
+  // Adjusted Dark Highlights for luminous contrast
+  --color-primary: #3b82f6;
+  --color-primary-hover: #60a5fa;
+  --color-primary-light: #93c5fd;
+
+  --color-secondary: #818cf8;
+  --color-secondary-hover: #a5b4fc;
+  --color-secondary-light: #c7d2fe;
+
+  --color-accent: #fb923c;
+  --color-accent-hover: #fdba74;
+  --color-accent-light: #fed7aa;
+
+  --color-success: #34d399;
+  --color-warning: #fbbf24;
+  --color-error: #f87171;
+  --color-info: #38bdf8;
+
+  // Dark Gradients
+  --gradient-primary: linear-gradient(135deg, #3b82f6 0%, #6366f1 100%);
+  --gradient-secondary: linear-gradient(135deg, #818cf8 0%, #a855f7 100%);
+  --gradient-accent: linear-gradient(135deg, #fb923c 0%, #facc15 100%);
+  --gradient-turbo: linear-gradient(135deg, #38bdf8 0%, #3b82f6 100%);
+  --gradient-surface: linear-gradient(180deg, rgba(30, 41, 59, 0.7) 0%, rgba(17, 24, 39, 0.6) 100%);
+
+  // Dark Elevation & Luminous Glows
+  --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  --shadow-sm: 0 2px 8px -2px rgba(0, 0, 0, 0.5), 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px -2px rgba(0, 0, 0, 0.6), 0 2px 6px -1px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 12px 32px -4px rgba(0, 0, 0, 0.7), 0 4px 12px -2px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 24px 48px -12px rgba(0, 0, 0, 0.85);
+  --shadow-fluent: 0 8px 24px rgba(0, 0, 0, 0.4), 0 2px 6px rgba(0, 0, 0, 0.2);
+  --shadow-fluent-lg: 0 16px 40px rgba(0, 0, 0, 0.5), 0 4px 12px rgba(0, 0, 0, 0.3);
+  --shadow-colored: 0 12px 36px -4px rgba(59, 130, 246, 0.35);
+  --shadow-glow: 0 0 32px rgba(59, 130, 246, 0.45);
+}
+
+// Brand color helper classes
+.text-primary { color: var(--color-primary); }
+.text-primary-500 { color: var(--color-primary); }
+.text-primary-600 { color: var(--color-primary-hover); }
+.bg-primary { background-color: var(--color-primary); }
+.bg-primary-500 { background-color: var(--color-primary); }
+.bg-primary-600 { background-color: var(--color-primary-hover); }
+.border-primary-500 { border-color: var(--color-primary); }
+
+.text-secondary { color: var(--color-secondary); }
+.text-secondary-500 { color: var(--color-secondary); }
+.bg-secondary { background-color: var(--color-secondary); }
+.bg-secondary-500 { background-color: var(--color-secondary); }
+
+.text-accent { color: var(--color-accent); }
+.text-accent-500 { color: var(--color-accent); }
+.bg-accent { background-color: var(--color-accent); }
+.bg-accent-500 { background-color: var(--color-accent); }
+
+.text-success { color: var(--color-success); }
+.text-warning { color: var(--color-warning); }
+.text-error { color: var(--color-error); }
+.text-error-500 { color: var(--color-error); }
+.text-info { color: var(--color-info); }
