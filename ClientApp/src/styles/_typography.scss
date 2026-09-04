@@ -4,88 +4,51 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap');
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-family-display);
-  font-weight: 700;
-  line-height: 1.2;
-  color: var(--color-text);
-  letter-spacing: -0.02em;
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-display);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--color-text);
+    letter-spacing: -0.02em;
+  }
+
+  h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
+  h2 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h3 { font-size: clamp(1.35rem, 3vw, 1.875rem); }
+  h4 { font-size: 1.25rem; }
+  h5 { font-size: 1.125rem; }
+  h6 { font-size: 1rem; }
+
+  p {
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+  }
 }
 
-h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
-h2 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
-h3 { font-size: clamp(1.35rem, 3vw, 1.875rem); }
-h4 { font-size: 1.25rem; }
-h5 { font-size: 1.125rem; }
-h6 { font-size: 1rem; }
+@layer components {
+  // Gradient Text Utilities
+  .gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+  }
 
-p {
-  color: var(--color-text-secondary);
-  line-height: 1.6;
-}
+  .gradient-text-accent {
+    background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+  }
 
-// Gradient Text Utilities
-.gradient-text {
-  background: var(--gradient-primary);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  display: inline-block;
-}
-
-.gradient-text-accent {
-  background: var(--gradient-accent);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  display: inline-block;
-}
-
-.gradient-text-turbo {
-  background: var(--gradient-turbo);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  display: inline-block;
-}
-
-// Text Size Scale
-.text-xs    { font-size: 0.75rem; line-height: 1rem; }
-.text-sm    { font-size: 0.875rem; line-height: 1.25rem; }
-.text-base  { font-size: 1rem; line-height: 1.5rem; }
-.text-lg    { font-size: 1.125rem; line-height: 1.75rem; }
-.text-xl    { font-size: 1.25rem; line-height: 1.75rem; }
-.text-2xl   { font-size: 1.5rem; line-height: 2rem; }
-.text-3xl   { font-size: 1.875rem; line-height: 2.25rem; }
-.text-4xl   { font-size: 2.25rem; line-height: 2.5rem; }
-.text-5xl   { font-size: 3rem; line-height: 1; }
-.text-6xl   { font-size: 3.75rem; line-height: 1; }
-
-// Font Weights
-.font-light     { font-weight: 300; }
-.font-normal    { font-weight: 400; }
-.font-medium    { font-weight: 500; }
-.font-semibold  { font-weight: 600; }
-.font-bold      { font-weight: 700; }
-.font-extrabold { font-weight: 800; }
-
-// Text Alignment
-.text-left    { text-align: left; }
-.text-center  { text-align: center; }
-.text-right   { text-align: right; }
-.text-justify { text-align: justify; }
-
-// Text Colors
-.text-white       { color: #ffffff !important; }
-.text-white\/90    { color: rgba(255, 255, 255, 0.9) !important; }
-.text-white\/75    { color: rgba(255, 255, 255, 0.75) !important; }
-.text-muted       { color: var(--color-text-muted) !important; }
-.text-secondary   { color: var(--color-text-secondary) !important; }
-.text-surface     { color: var(--color-surface) !important; }
-
-// Truncation
-.truncate {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  .gradient-text-turbo {
+    background: var(--gradient-turbo);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+  }
 }

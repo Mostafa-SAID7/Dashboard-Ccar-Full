@@ -21,8 +21,10 @@
 // 6. Reusable Components & Cockpit Surfaces
 @use 'styles/components' as *;
 
-// 7. Core Layout & Responsive Utilities
-@use 'styles/utilities' as *;
-
-// 8. Dynamic Micro-Animations & Interactions
+// 7. Dynamic Micro-Animations & Interactions
 @use 'styles/animations' as *;
+
+// 8. Tailwind Directives
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

@@ -132,27 +132,3 @@
   --shadow-glow: 0 0 32px rgba(59, 130, 246, 0.45);
 }
 
-// Brand color helper classes
-.text-primary { color: var(--color-primary); }
-.text-primary-500 { color: var(--color-primary); }
-.text-primary-600 { color: var(--color-primary-hover); }
-.bg-primary { background-color: var(--color-primary); }
-.bg-primary-500 { background-color: var(--color-primary); }
-.bg-primary-600 { background-color: var(--color-primary-hover); }
-.border-primary-500 { border-color: var(--color-primary); }
-
-.text-secondary { color: var(--color-secondary); }
-.text-secondary-500 { color: var(--color-secondary); }
-.bg-secondary { background-color: var(--color-secondary); }
-.bg-secondary-500 { background-color: var(--color-secondary); }
-
-.text-accent { color: var(--color-accent); }
-.text-accent-500 { color: var(--color-accent); }
-.bg-accent { background-color: var(--color-accent); }
-.bg-accent-500 { background-color: var(--color-accent); }
-
-.text-success { color: var(--color-success); }
-.text-warning { color: var(--color-warning); }
-.text-error { color: var(--color-error); }
-.text-error-500 { color: var(--color-error); }
-.text-info { color: var(--color-info); }
